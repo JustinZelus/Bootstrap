@@ -1,5 +1,7 @@
-$bg-color: red;
+//Bootstrap
 
-body {
-  background: $bg-color;
-}
+$theme-colors: (
+  "primary": #d95700
+);
+
+@import "/node_modules/bootstrap/scss/bootstrap";
