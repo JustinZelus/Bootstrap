@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">MOSO</a>
+            <a class="navbar-brand" href="#">MAGIC</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -48,8 +48,33 @@
 
             </div>
         </nav>
-
-        <div class="jumbotron">
+        <div id="caroudelIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#caroudelIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#caroudelIndicators" data-slide-to="1"></li>
+                <li data-target="#caroudelIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/img/m1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/m4.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/m3.png" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#caroudelIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previos</span>
+            </a>
+            <a class="carousel-control-next" href="#caroudelIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- <div class="jumbotron">
             <h1 class="display-4">Simple. Elegant. Awesome</h1>
             <P class="lead">Berlin, Germany’s capital, dates to the 13th century. Reminders of the city's turbulent
                 20th-century
@@ -59,9 +84,9 @@
                 in 1963.</P>
             <hr class="my-4">
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
+        </div> -->
 
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-sm-12 col-md-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
