@@ -4,9 +4,83 @@ $theme-colors: (
   "primary": #d95700
 );
 
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+}
+
 .jumbotron {
   background-color: #ffffff !important;
   border-top: 5px solid rgb(219, 219, 219);
+}
+
+.features_items {
+  overflow: hidden;
+}
+
+.product-image-wrapper {
+  border: 1px solid #f7f7f5;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+// .left-sidebar {
+//   color: #fe980f;
+//   font-family: "Roboto", sans-serif;
+//   font-size: 18px;
+//   font-weight: 700;
+//   margin: 0 auto 30px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   position: relative;
+//   z-index: 3;
+// }
+
+.line-behind-title-text h2 {
+  color: #fe980f;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 0 auto 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2.background {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+
+  span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #ededed;
+    padding: 0 15px;
+  }
+}
+
+.card-img-top {
+  width: 100% !important;
+}
+
+.none-bullet {
+  list-style: none;
+}
+
+.under-line {
+  text-decoration: underline;
+  color: rgb(9, 70, 128);
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
