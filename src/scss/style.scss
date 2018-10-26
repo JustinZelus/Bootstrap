@@ -1,4 +1,4 @@
-$body-bg: #ededed;
+$body-bg: #d5d5d5;
 
 $theme-colors: (
   "primary": #d95700
@@ -8,6 +8,10 @@ $theme-colors: (
   width: 10px !important;
   height: 10px !important;
   border-radius: 100% !important;
+}
+
+.bg-deep-grey {
+  background-color: #ededed;
 }
 
 .jumbotron {
@@ -65,7 +69,7 @@ h2.background {
 
   span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #ededed;
+    background: #d5d5d5;
     padding: 0 15px;
   }
 }
