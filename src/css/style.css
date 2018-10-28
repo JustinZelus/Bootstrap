@@ -4,7 +4,18 @@
   border-radius: 100% !important; }
 
 .bg-deep-grey {
-  background-color: #ededed; }
+  background-color: #ffffff; }
+
+.appBackground {
+  background-size: cover;
+  background-image: url("../assets/img/bg_background.png");
+  background-repeat: no-repeat; }
+
+.product-image-wrapper {
+  border: 1px solid #ededed;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: #dfdbdb; }
 
 .jumbotron {
   background-color: #ffffff !important;
@@ -12,11 +23,6 @@
 
 .features_items {
   overflow: hidden; }
-
-.product-image-wrapper {
-  border: 1px solid #f7f7f5;
-  overflow: hidden;
-  margin-bottom: 30px; }
 
 .line-behind-title-text h2 {
   color: #fe980f;
@@ -55,6 +61,10 @@ h2.background {
 
 .under-line {
   color: #094680; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3% !important; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

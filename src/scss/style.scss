@@ -11,7 +11,20 @@ $theme-colors: (
 }
 
 .bg-deep-grey {
-  background-color: #ededed;
+  background-color: #ffffff;
+}
+
+.appBackground {
+  background-size: cover;
+  background-image: url("../assets/img/bg_background.png");
+  background-repeat: no-repeat;
+}
+
+.product-image-wrapper {
+  border: 1px solid #ededed;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: #dfdbdb;
 }
 
 .jumbotron {
@@ -21,12 +34,6 @@ $theme-colors: (
 
 .features_items {
   overflow: hidden;
-}
-
-.product-image-wrapper {
-  border: 1px solid #f7f7f5;
-  overflow: hidden;
-  margin-bottom: 30px;
 }
 
 // .left-sidebar {
@@ -84,6 +91,11 @@ h2.background {
 
 .under-line {
   color: rgb(9, 70, 128);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3% !important;
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
