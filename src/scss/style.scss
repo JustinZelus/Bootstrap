@@ -1,4 +1,4 @@
-$body-bg: #d5d5d5;
+$body-bg: #727070;
 
 $theme-colors: (
   "primary": #d95700
@@ -36,18 +36,6 @@ $theme-colors: (
   overflow: hidden;
 }
 
-// .left-sidebar {
-//   color: #fe980f;
-//   font-family: "Roboto", sans-serif;
-//   font-size: 18px;
-//   font-weight: 700;
-//   margin: 0 auto 30px;
-//   text-align: center;
-//   text-transform: uppercase;
-//   position: relative;
-//   z-index: 3;
-// }
-
 .line-behind-title-text h2 {
   color: #fe980f;
   font-family: "Roboto", sans-serif;
@@ -76,7 +64,7 @@ h2.background {
 
   span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #d5d5d5;
+    background: #727070;
     padding: 0 15px;
   }
 }
@@ -96,6 +84,17 @@ h2.background {
 .carousel-control-prev,
 .carousel-control-next {
   width: 3% !important;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+  border: 1px solid #73ad21;
+  padding: 10px;
+}
+
+.card-bg {
+  background-color: rgb(214, 214, 214) !important;
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";

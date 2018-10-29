@@ -4,6 +4,7 @@
 
 | Date       | Author | Ver   | Description                                                                                                                                    |
 | ---------- | -----: | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2018/10/29 |     JZ | 1.0.6 | Comment box done.<br>Add 'center' class.                                                                                                       |
 | 2018/10/29 |     JZ | 1.0.5 | Hot Products done.                                                                                                                             |
 | 2018/10/27 |     JZ | 1.0.4 | Right side Commercial wall done.                                                                                                               |
 | 2018/10/26 |     JZ | 1.0.3 | Modify accordion.<br> Modify pagination.                                                                                                       |

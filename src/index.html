@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="appBackground">
+<body class="">
     <div class="container">
         <!--Navbar Top-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -78,7 +78,7 @@
         </div>
         <!--Content-->
         <div class="container">
-            <div class="row">
+            <div class="row mt-4">
                 <!--Left side Menu-->
                 <div class="col-lg-3">
                     <div class="line-behind-title-text">
@@ -140,9 +140,10 @@
                 </div>
                 <!--Center Products-->
                 <div class="col-lg-7">
+                    <!--Cards-->
                     <div class="line-behind-title-text">
                         <h2 class="background"><span>Products</span></h2>
-                        <div class="row  mb-4">
+                        <div class="row mb-4">
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/img/boreal_griffin.png" alt="Card image cap">
@@ -205,7 +206,8 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <!--Page navigation-->
+                    <div class="mb-5">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-center">
                                 <li class="page-item">
@@ -227,12 +229,10 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </nav>
                     </div>
-                    w
                     <!--Hot Products-->
-                    <div class="recommended_items">
+                    <div class="mt-4">
                         <div class="line-behind-title-text">
                             <h2 class="background"><span>Hot Products</span></h2>
                         </div>
@@ -318,9 +318,8 @@
                         </div>
                     </div>
                 </div>
-
                 <!--Right side Commercial wall-->
-                <div class="col-lg-2">
+                <div class="col-lg-2 mt-4">
                     <div class="container bg-deep-grey">
                         <div class="row mt-3">
                             <div class="col-12 col-md-6 col-lg-12 mt-2">
@@ -355,42 +354,34 @@
                     </div>
                 </div>
             </div>
-
-
+            <!--Comment box-->
+            <div class="center mt-5 mb-5">
+                <div class="line-behind-title-text">
+                    <h2 class="background"><span>Comment</span></h2>
+                    <form>
+                        <div class="form-group mt-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-4">
+                            <input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject">
+                        </div>
+                        <div class="form-group mt-4">
+                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="rounded mx-auto d-block btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
-
-
-    <div class="row mt-sm-4 mt-md-0">
-        <div class="col-sm-12 col-md-8 text-center text-md-left">
-            <h3>Spacing utilities that apply to all breakpoints</h3>
-            <p class="lead">This is because those classes are applied from min-width: 0 and up, and thus are not
-                bound by a media query. </p>
-            <p>Additionally, Bootstrap also includes an .mx-auto class for horizontally centering fixed-width block
-                level content—that is, content that has display: block and a width set—by setting the horizontal
-                margins to auto.</p>
-            <p> Includes support for individual properties, all properties, and vertical and horizontal properties.
-                Classes are built from a default Sass map ranging from .25rem to 3rem.</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <h3 class="mb-4">Secondary Menu</h3>
-            <ul class="nav flex-column nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Jersey</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shoesss</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Others</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </div>
     </div>
 
 
