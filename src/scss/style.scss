@@ -1,4 +1,92 @@
-$body-bg: #727070;
+/* -- Icomoon Font Icons -- */
+$icon-arrow-up-light: "\75";
+$icon-arrow-down-light: "\64";
+$icon-arrow-up: "\55";
+$icon-arrow-down: "\44";
+$icon-arrow-left-light: "\28";
+$icon-arrow-right-light: "\29";
+$icon-arrow-left: "\3c";
+$icon-arrow-right: "\3e";
+$icon-arrow-menu: "\72";
+$icon-arrow: "\41";
+$icon-event-checked: "\e912";
+$icon-Calendar: "\43";
+$icon-UserIcon: "\31";
+$icon-apple: "\61";
+$icon-artist-credit: "\69";
+$icon-braquet: "\62";
+$icon-check: "\e909";
+$icon-close: "\58";
+$icon-download: "\59";
+$icon-duration: "\e905";
+$icon-gatherer: "\67";
+$icon-immersive-experience-zone-logo: "\e901";
+$icon-immersive-experience-zone-logo-locked: "\e900";
+$icon-interrogation: "\3f";
+$icon-langues: "\4c";
+$icon-localisation: "\e90a";
+$icon-locator: "\6c";
+$icon-magic-cards: "\42";
+$icon-medal: "\e908";
+$icon-menu-mobile: "\6d";
+$icon-mp3: "\33";
+$icon-page: "\50";
+$icon-play: "\70";
+$icon-plus: "\2b";
+$icon-plus-inverted: "\e90c";
+$icon-search: "\73";
+$icon-search-2: "\e90b";
+$icon-sound-off: "\e902";
+$icon-sound-on: "\e903";
+$icon-trophy: "\e907";
+$icon-play-rounded: "\e90d";
+$icon-pause-rounded: "\e90e";
+$icon-pinterest: "\e917";
+$icon-mail: "\e90f";
+$icon-rss: "\e910";
+$icon-external-link: "\e911";
+$icon-spectator: "\e913";
+$icon-reocurring: "\e914";
+$icon-share: "\53";
+$icon-forum: "\66";
+$icon-facebook: "\46";
+$icon-facebook-alternate: "\e916";
+$icon-Google_plus: "\47";
+$icon-Niconico: "\6e";
+$icon-camera: "\63";
+$icon-snapchat: "\e919";
+$icon-tumblr: "\e904";
+$icon-tumblr-alternate: "\e918";
+$icon-twitter: "\54";
+$icon-twitch: "\74";
+$icon-twitch-large: "\e906";
+$icon-vk-01: "\76";
+$icon-Weibo: "\57";
+$icon-youtube: "\79";
+$icon-youtube-play-btn: "\e915";
+
+/* -- Imported Fonts -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$font-icomoon: icomoon, sans-serif;
+$font-opensans: "Open Sans", sans-serif;
+$font-beleren-bold: "Beleren Bold", sans-serif;
+$font-beleren-smallcaps-bold: "Beleren SmallCaps Bold", sans-serif;
+$font-beleren-smallcaps-bolditalic: "Beleren SmallCaps BoldItalic", sans-serif;
+
+/* -- Colors -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$color-primary: #be630e;
+$color-secondary: #212121;
+$color-primary-modern: #ea4b12;
+$color-youtube: #cd201f;
+$color-twitch: #6441a4;
+
+/* -- Transitions -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$transition-duration: 0.25s;
+$transition-timing-function: ease;
+
+$body-bg: #182132;
 
 $theme-colors: (
   "primary": #d95700
@@ -21,9 +109,9 @@ $theme-colors: (
 }
 
 .product-image-wrapper {
-  border: 1px solid #ededed;
+  border: 1px solid #691a1a;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin: 8px;
   background-color: #dfdbdb;
 }
 
@@ -64,7 +152,7 @@ h2.background {
 
   span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #727070;
+    background: #182132;
     padding: 0 15px;
   }
 }
@@ -89,12 +177,234 @@ h2.background {
 .center {
   margin: auto;
   width: 70%;
-  border: 1px solid #73ad21;
+  //border: 1px solid #73ad21;
   padding: 10px;
 }
 
-.card-bg {
-  background-color: rgb(214, 214, 214) !important;
+.card-bg-hot {
+  background-color: rgb(5, 223, 212) !important;
+}
+
+@mixin hover() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin icomoon($_content, $_font-size) {
+  content: $_content;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $_font-size;
+  line-height: 1em;
+  font-family: $font-icomoon;
+}
+
+//Footer
+.module_footer {
+  position: relative;
+  background: #0b0b0b;
+
+  //Titles
+  h5 {
+    margin: 0 0 0px;
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    &:after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      margin-top: 7px;
+      display: block;
+      background-color: #ea4b12;
+    }
+  }
+
+  .socials {
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+
+    // @media ($breakpoint-mobile-landscape) {
+    //   width: 100%;
+    // }
+
+    // @media ($breakpoint-mobile-portrait) {
+    //   margin-bottom: 30px;
+    // }
+
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      li {
+        width: 50px;
+        margin: 0 16px 10px 0;
+        text-align: center;
+        flex-shrink: 0;
+
+        @media (max-width: 1024px) {
+          margin: 0 9px 8px 0;
+        }
+
+        a {
+          width: 50px;
+          height: 50px;
+          margin: 0 auto;
+          display: block;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          position: relative;
+          transition: background-color $transition-duration
+            $transition-timing-function;
+          text-decoration: none;
+
+          span {
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+          }
+
+          &:after {
+            margin: -10px 0 0 -10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+          }
+
+          &.facebook:after {
+            @include icomoon($icon-facebook-alternate, 20px);
+            color: white;
+          }
+          &.twitter:after {
+            @include icomoon($icon-twitter, 20px);
+            color: white;
+          }
+          &.youtube:after {
+            @include icomoon($icon-youtube-play-btn, 20px);
+            color: white;
+            margin-left: -14px;
+          }
+          &.instagram:after {
+            @include icomoon($icon-camera, 20px);
+            color: white;
+          }
+          &.pinterest:after {
+            @include icomoon($icon-pinterest, 26px);
+            color: white;
+            margin-top: -13px;
+          }
+          &.tumblr:after {
+            @include icomoon($icon-tumblr-alternate, 26px);
+            color: white;
+            margin-top: -13px;
+          }
+          &.twitch:after {
+            @include icomoon($icon-twitch, 20px);
+            color: white;
+          }
+          &.snapchat:after {
+            @include icomoon($icon-snapchat, 20px);
+            color: white;
+          }
+
+          //MAX WIDTH 20px MAX HEIGHT 20px for the icons
+          svg,
+          img {
+            width: 20px;
+            height: 20px;
+            fill: white;
+            display: block;
+            margin: 0 auto;
+            transition: fill $transition-duration $transition-timing-function;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -10px 0 0 -10px;
+          }
+
+          @include hover() {
+            background-color: $color-primary-modern;
+
+            svg {
+              fill: black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .submenu {
+    & .content {
+      ul {
+        margin: 12px 0 40px;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          margin: -2px 0 6px;
+          color: #c2c2c2;
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: #c2c2c2;
+            text-decoration: none;
+            font-size: 1rem;
+
+            @include hover() {
+              color: #d95700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyrights {
+    background-color: black;
+
+    & .wrapper {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // @media ($breakpoint-tablet-landscape) {
+      //   padding: 0 20px;
+      // }
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.5);
+
+        // @media ($breakpoint-mobile-portrait) {
+        //   text-align: center;
+        // }
+      }
+    }
+  }
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
